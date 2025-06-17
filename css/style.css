@@ -402,3 +402,77 @@ p, ul, li, em, aside, figcaption {
 .contact-slogan-link:hover {
   color: darkred;
 }
+/* ===== RESPONSIVE DESIGN MOBILE ===== */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .side-image {
+    display: none; /* cacher les images latérales trop larges */
+  }
+
+  .offer-box {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .review-box {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .review-img {
+    width: 100px;
+  }
+
+  .connectivite-icon {
+    width: 25px;
+    margin-top: 20px;
+  }
+
+  .contact-box,
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-icon {
+    width: 25px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .contact-details p {
+    font-size: 14px;
+  }
+
+  .subtitle-box {
+    max-width: 90%;
+  }
+
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  .offer-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .separator-vertical {
+    display: none;
+  }
+
+  .glossy-citation-thin {
+    white-space: normal;
+    font-size: 12px;
+  }
+
+  .contact-slogan-link {
+    font-size: 14px;
+    display: block;
+    padding: 10px 20px;
+  }
+}
