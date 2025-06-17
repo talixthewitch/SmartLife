@@ -5,30 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SmartLife</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Bulles décoratives -->
+  <div class="bubbles-layer">
+    <img src="img/bulle.png" alt="Bulle décorative" class="bulle bulle1">
+    <img src="img/bulle.png" alt="Bulle décorative" class="bulle bulle2">
+    <img src="img/bulle.png" alt="Bulle décorative" class="bulle bulle3">
+  </div>
 
   <!-- Barre de navigation glossy -->
   <nav class="nav-bar">
     <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Nos offres</a></li>
-      <li><a href="#">Ils ont adoré</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#proposition">Accueil</a></li>
+      <li><a href="#nosoffres">Nos offres</a></li>
+      <li><a href="#avis">Leurs avis</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Logo SmartLife en grand -->
-  <div class="logo-container">
+  <!-- Citation glossy -->
+  <div class="glossy-citation-thin">
+    <p><em>Chez SmartLife™, nous ne vendons pas des maisons. Nous offrons un mode de vie.</em></p>
+  </div>
+
+  <!-- Logo SmartLife en haut à gauche -->
+  <div class="logo-container-left moved-up-stronger">
     <img src="img/logosmartlife.png" alt="Logo SmartLife" class="logo-smartlife">
   </div>
 
-  <main class="container">
-    <!-- Bloc gauche : offre -->
-    <section class="offer">
-      <h2>Ce que nous proposons ?</h2>
-      <div class="offer-box">
+  <!-- Sous-titre centré "The Smart City" + image ville -->
+  <div class="smart-city-block very-close-to-citation">
+    <div class="subtitle-box black-bordered">
+      <p class="apple-subtitle no-bold">The Smart City</p>
+    </div>
+    <div class="city-image medium-city closer-to-subtitle">
+      <img src="img/ville.png" alt="Ville futuriste encadrée">
+    </div>
+  </div>
+
+  <main class="container moved-up-stronger">
+    <!-- Image salon gauche -->
+    <div class="side-image aligned-symmetrically">
+      <img src="img/salon.png" alt="Salon encadré noir" class="side-img black-frame reduced-height">
+    </div>
+
+    <!-- Bloc centré avec titre et texte -->
+    <section class="offer centered-offer" id="proposition">
+      <div class="subtitle-box black-bordered">
+        <h2 class="apple-subtitle no-bold">Ce que nous proposons ?</h2>
+      </div>
+      <div class="offer-box black-outline">
         <p>
           Construisez votre vie de rêve, un paradis numérique !<br />
           Découvrez un monde où nature et technologie ne font qu’un.<br />
@@ -36,12 +65,12 @@
           de Smart Cities lumineuses, sécurisées et harmonieuses.<br />
           Nous réinventons la vie de demain, dès aujourd’hui.
         </p>
-        <ul>
-          <li>🌐 Connectivité fluide</li>
-          <li>🧘‍♂️ Bien-être augmenté</li>
-          <li>🌿 Espaces verts</li>
-          <li>🛡️ Sécurité omniprésente</li>
-          <li>🏘️ Communautés sereines et durables</li>
+        <ul class="icon-list centered-list">
+          <li><img src="img/bouton_valider.png" alt="✔">Connectivité fluide</li>
+          <li><img src="img/bouton_valider.png" alt="✔">Bien-être augmenté</li>
+          <li><img src="img/bouton_valider.png" alt="✔">Espaces verts</li>
+          <li><img src="img/bouton_valider.png" alt="✔">Sécurité omniprésente</li>
+          <li><img src="img/bouton_valider.png" alt="✔">Communautés sereines et durables</li>
         </ul>
         <p>
           Vivez l’avenir. Sans effort. En confiance.<br />
@@ -50,27 +79,146 @@
       </div>
     </section>
 
-    <!-- Bloc centre : citation -->
-    <aside class="quote">
-      <p><em>Chez SmartLife™, nous ne vendons pas des maisons.<br>Nous offrons un mode de vie.</em></p>
-    </aside>
-
-    <!-- Bloc droite : image -->
-    <section class="image-zone">
-      <h3>Et si ce magnifique salon était le vôtre ?</h3>
-      <figure>
-        <img src="img/salon.png" alt="Salon d’un SmartDome™" />
-        <figcaption>Ce n’est pas de la science-fiction. C’est votre nouveau quartier.</figcaption>
-      </figure>
-    </section>
+    <!-- Image salon droite -->
+    <div class="side-image aligned-symmetrically">
+      <img src="img/salon7.png" alt="Salon encadré noir" class="side-img black-frame reduced-height">
+    </div>
   </main>
 
-  <!-- Pied de page -->
-  <footer>
+  <!-- SECTION : Nos Offres -->
+  <section class="offers-section" id="nosoffres">
+    <div class="subtitle-box black-bordered">
+      <p class="apple-subtitle no-bold">Nos offres</p>
+    </div>
+
+    <div class="offers-grid">
+      <!-- Ligne 1 -->
+      <div class="offer-item"><img src="img/hall.png" alt="Hall"></div>
+      <div class="separator-vertical"></div>
+      <div class="offer-item"><img src="img/salon2.png" alt="Salon 2"></div>
+      <div class="separator-vertical"></div>
+      <div class="offer-item"><img src="img/bain.png" alt="Salle de bain"></div>
+      <div class="separator-vertical"></div>
+      <div class="offer-item"><img src="img/salon6.png" alt="Salon 6"></div>
+
+      <!-- Ligne 2 -->
+      <div class="offer-item"><img src="img/dressing.png" alt="Dressing"></div>
+      <div class="separator-vertical"></div>
+      <div class="offer-item"><img src="img/salon3.png" alt="Salon 3"></div>
+      <div class="separator-vertical"></div>
+      <div class="offer-item"><img src="img/metro.png" alt="Métro"></div>
+      <div class="separator-vertical"></div>
+      <div class="offer-item"><img src="img/salon4.png" alt="Salon 4"></div>
+    </div>
+  </section>
+
+  <!-- SECTION : Leurs Avis -->
+  <section class="reviews-section" id="avis">
+    <div class="subtitle-box black-bordered">
+      <p class="apple-subtitle no-bold">Leurs avis</p>
+    </div>
+
+    <div class="review-box">
+  <div class="review-photos">
+  <div class="review-person">
+    <img src="img/femme.png" alt="Femme 1" class="review-img">
+    <p class="review-name">Vanessa (29 ans)</p>
+  </div>
+  <div class="review-person">
+    <img src="img/homme.png" alt="Homme 1" class="review-img">
+    <p class="review-name">Steve (29 ans)</p>
+  </div>
+</div>
+
+  <div class="review-content-with-icon">
+    <img src="img/connectivite.png" alt="Icône Connectivité" class="connectivite-icon">
+    <p class="review-text">
+      "Depuis que nous avons emménagé ici, plus de peur de quoi que ce soit. Tout est connecté!<br />
+      Notre lit intelligent nous donne un rapport chaque matin sur la qualité de notre sommeil.<br />
+      C'est la vraie tranquillité, nous le voyons comme l'accomplissement de notre vie!"
+    </p>
+  </div>
+</div>
+
+    <div class="review-box">
+  <div class="review-photos">
+  <div class="review-person">
+      <img src="img/femme3.png" alt="Femme 3" class="review-img">
+      <p class="review-name">Karen (36 ans)</p>
+  </div>
+  <div class="review-person">
+    <img src="img/homme4.png" alt="Homme 4" class="review-img">
+    <p class="review-name">Jim (38 ans)</p>
+  </div>
+</div>
+
+    <div class="review-content-with-icon">
+    <img src="img/connectivite.png" alt="Icône Connectivité" class="connectivite-icon">
+      <p class="review-text">
+        "Nous contrôlons presque tout à distance, parfait avec nos emplois chargés !<br />
+        Et cette déco moderne, futuriste et écologique, on en est fan.<br />
+        Les promenades pour décompresser sont notre moment préféré."
+      </p>
+    </div>
+  </div>
+
+    <div class="review-box">
+  <div class="review-photos">
+  <div class="review-person">
+      <img src="img/femme2.png" alt="Femme 2" class="review-img">
+      <p class="review-name">Caroline (46 ans)</p>
+  </div>
+  <div class="review-person">
+      <img src="img/homme2.png" alt="Homme 2" class="review-img">
+      <p class="review-name">Bill (45 ans)</p>
+    </div>
+  </div>
+
+    <div class="review-content-with-icon">
+    <img src="img/connectivite.png" alt="Icône Connectivité" class="connectivite-icon">
+      <p class="review-text">
+        "Nos enfants sont aux anges ! Nous n'avons aucune inquiétude à les laisser jouer dans les parcs avec les autres enfants ;<br />
+        il y a des caméras partout, et puis les voisins sont tous très bienveillants.<br />
+        Nous n'aurions pas pu rêver mieux pour notre vie de famille."
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION : Contact -->
+<section class="contact-section" id="contact">
+  <div class="subtitle-box black-bordered">
+    <p class="apple-subtitle no-bold">Contact</p>
+  </div>
+
+  <div class="contact-box">
+    <p class="contact-text">
+      Pour de plus amples informations, veuillez contacter l'un de nos collaborateurs.<br />
+      Pas d'inquiétude, ils ne vous diront que des mensonges ! :)
+    </p>
+
+    <div class="contact-info">
+      <img src="img/telephone.png" alt="Icône téléphone" class="contact-icon">
+      <div class="contact-details">
+        <p>Email : smartlife@hotmail.com</p>
+        <p>Téléphone : +32 555 42 42 42</p>
+        <p>Adresse : Rue de la vie parfaite, 42, Havre-De-Paix</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="realite.html" class="contact-slogan-link" target="_blank"> 
+  Achetez le futur, payez le prix plus tard !<br />
+  Et n'oubliez pas, votre paradis, leur enfer.
+</a>
+
+  <!-- Pied de page unique tout en bas -->
+  <footer class="footer-glossy">
     <p>
       Si nous avions su que la technologie pouvait nous offrir une vie aussi parfaite,
       nous l’aurions inventée plus tôt.
     </p>
+  
   </footer>
 
 </body>
