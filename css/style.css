@@ -7,15 +7,6 @@ body {
   font-weight: normal !important;
 }
 
-/* Bulles */
-.bulle {
-  position: absolute;
-  opacity: 1;
-  width: 140px;
-}
-.bulle1 { top: 160px; left: 30%; }
-.bulle2 { top: 320px; right: 12%; }
-.bulle3 { top: 480px; left: 45%; }
 
 /* Navigation */
 .nav-bar {
@@ -60,6 +51,9 @@ body {
   padding: 10px 60px 0 60px;
   position: relative;
   z-index: 5;
+}
+.logo-container-left.moved-up-stronger {
+  margin-top: -175px;
 }
 .logo-smartlife {
   max-width: 340px;
@@ -128,7 +122,7 @@ body {
   height: auto;
 }
 .city-image.closer-to-subtitle {
-  margin-top: 30px;
+  margin-top: 30px; /* identique à .offer-box margin */
 }
 
 /* Container principal */
@@ -250,7 +244,6 @@ body {
 p, ul, li, em, aside, figcaption {
   font-weight: normal !important;
 }
-
 /* SECTION - Leurs Avis */
 .reviews-section {
   margin: 40px auto;
@@ -298,6 +291,7 @@ p, ul, li, em, aside, figcaption {
   flex-wrap: nowrap;
   margin-top: 10px;
 }
+
 .review-icon {
   width: 28px;
   height: auto;
@@ -309,11 +303,13 @@ p, ul, li, em, aside, figcaption {
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .review-person {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .review-name {
   font-style: italic;
   font-size: 14px;
@@ -322,13 +318,12 @@ p, ul, li, em, aside, figcaption {
   margin-top: 6px;
 }
 .connectivite-icon {
-  width: 35px;
+  width: 35px;              /* 🔧 Taille horizontale (modifie ici pour agrandir ou réduire) */
   height: auto;
-  margin-right: 15px;
-  vertical-align: top;
-  margin-top: 60px;
+  margin-right: 15px;       /* 🔧 Espace entre l’icône et le texte */
+  vertical-align: top;      /* 🔧 Alignement vertical avec le début du texte */
+  margin-top: 60px;          /* 🔧 Décale l’icône un peu plus bas si besoin */
 }
-
 /* SECTION - Contact */
 .contact-section {
   margin: 40px auto;
@@ -356,8 +351,7 @@ p, ul, li, em, aside, figcaption {
 .contact-icon {
   width: 40px;
   height: auto;
-  margin-top: 40px;
-  margin-right: 10px;
+  margin-top: 41px;
 }
 .contact-details {
   text-align: left;
@@ -385,98 +379,25 @@ p, ul, li, em, aside, figcaption {
   margin-top: 25px;
   transition: color 0.2s;
 }
+
 .contact-slogan-link:hover {
   color: darkred;
 }
+.review-content-with-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  min-height: 160px; /* 🔧 force les trois à avoir la même hauteur */
+  position: relative;
+}
 
-/* ===== RESPONSIVE DESIGN MOBILE ===== */
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .side-image {
-    display: none;
-  }
-
-  .offer-box {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .review-box {
-    max-width: 95%;
-    padding: 15px;
-  }
-
-  .review-img {
-    width: 100px;
-  }
-
-  .connectivite-icon {
-    width: 25px;
-    margin-top: 20px;
-  }
-
-  .contact-box,
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-icon {
-    width: 25px;
-    display: block;
-    margin: 0 auto 10px;
-  }
-
-  .contact-details p {
-    font-size: 14px;
-  }
-
-  .subtitle-box {
-    max-width: 90%;
-  }
-
-  .offers-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-  }
-
-  .offer-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .separator-vertical {
-    display: none;
-  }
-
-  .glossy-citation-thin {
-    white-space: normal;
-    font-size: 12px;
-  }
-
-  .contact-slogan-link {
-    font-size: 14px;
-    display: block;
-    padding: 10px 20px;
-  }
-
-  .logo-container-left {
-    justify-content: center;
-    padding: 10px 20px;
-  }
-
-  .logo-smartlife {
-    max-width: 220px;
-  }
-
-  .bulle {
-    width: 90px;
-  }
-
-  .bulle1 { top: 80px; left: 5%; }
-  .bulle2 { top: 150px; right: 5%; }
-  .bulle3 { top: 220px; left: 50%; transform: translateX(-50%); }
+.connectivite-icon {
+  width: 35px;
+  height: auto;
+  margin-right: 15px;
+  vertical-align: top;
+  margin-top: 0px;     /* 🔧 Réinitialisé à 0 pour tous */
+  align-self: flex-start;
 }
