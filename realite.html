@@ -1,21 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Réalité</title>
   <style>
     body {
       margin: 0;
       background-color: black;
-      color: white; /* Pour que le texte soit lisible sur fond noir */
+      overflow-x: hidden;
       font-family: Arial, sans-serif;
+    }
+
+    .scroll-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: scroll 400s linear infinite;
+    }
+
+    .scroll-container img {
+      max-width: 90vw;
+      height: auto;
+      margin: 60px 0;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .scroll-container iframe {
+      width: 70vw; /* Ajusté pour être plus grand sans être étiré */
+      height: calc(70vw * 9 / 16); /* Ratio 16:9 */
+      margin: 60px 0;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      border: none;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateY(100vh); }
+      100% { transform: translateY(-350%); }
     }
   </style>
 </head>
 <body>
+  <div class="scroll-container">
+    <img src="img/artisan.png" alt="Artisan vs IA">
+    <img src="img/chiffre1.png" alt="Chiffre 1">
+    <img src="img/ghana.jpg" alt="Ghana 1">
 
-  <h1>Bienvenue dans la réalité!</h1>
-  <p>Ici, tout est sombre.</p>
+    <iframe src="https://www.youtube.com/embed/vN1bd1_JJSo?autoplay=1&mute=1&controls=0&loop=1&playlist=vN1bd1_JJSo" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+    <img src="img/chatgptphoto.png" alt="ChatGPT absurde">
+    <img src="img/chiffre2.png" alt="Chiffre 2">
+    <img src="img/ghana2.jpg" alt="Ghana 2">
+
+    <iframe src="https://www.youtube.com/embed/-uyIzKIw0xY?autoplay=1&mute=1&controls=0&loop=1&playlist=-uyIzKIw0xY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <img src="img/chiffre3.png" alt="Chiffre 3">
+    <iframe src="https://www.youtube.com/embed/LDdUUzaWt8w?autoplay=1&mute=1&controls=0&loop=1&playlist=LDdUUzaWt8w" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <img src="img/chiffre4.png" alt="Chiffre 4">
+    <img src="img/chiffre5.png" alt="Chiffre 5">
+
+    <iframe src="https://www.youtube.com/embed/knTiUD5IAww?autoplay=1&mute=1&controls=0&loop=1&playlist=knTiUD5IAww" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <img src="img/chiffre6.png" alt="Chiffre 6">
+    <img src="img/marc.png" alt="Homme gadgets techs">
+
+    <iframe src="https://www.youtube.com/embed/qFrftRiz1Kk?autoplay=1&mute=1&controls=0&loop=1&playlist=qFrftRiz1Kk" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <img src="img/chiffre7.png" alt="Chiffre 7">
+    
+    <iframe src="https://www.youtube.com/embed/nwzZands_3A?autoplay=1&mute=1&controls=0&loop=1&playlist=nwzZands_3A" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <img src="img/chiffre8.png" alt="Chiffre 8">
+
+    <iframe src="https://www.youtube.com/embed/6DXX0Oqf-48?autoplay=1&mute=1&controls=0&loop=1&playlist=6DXX0Oqf-48" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <img src="img/chiffre9.png" alt="Chiffre 9">
+    <img src="img/chiffre10.png" alt="Chiffre 10">
+
+    <iframe src="https://www.youtube.com/embed/rooEBjZWpDc?autoplay=1&mute=1&controls=0&loop=1&playlist=rooEBjZWpDc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <iframe src="https://www.youtube.com/embed/glrgKFQ2DWk?autoplay=1&mute=1&controls=0&loop=1&playlist=glrgKFQ2DWk" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <img src="img/chiffre11.png" alt="Chiffre 11">
+
+    <iframe src="https://www.youtube.com/embed/WBNGHTyO5k8?autoplay=1&mute=1&controls=0&loop=1&playlist=WBNGHTyO5k8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <iframe src="https://www.youtube.com/embed/UVORy_hUcwM?autoplay=1&mute=1&controls=0&loop=1&playlist=UVORy_hUcwM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
 </body>
 </html>
